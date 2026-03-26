@@ -1,0 +1,31 @@
+safety-ppe-detection/
+│
+├── data/
+│   ├── raw/                # исходные данные
+│   ├── images/
+│   ├── labels/
+│   └── dataset.yaml
+│
+├── models/
+│   ├── weights/            # обученные модели
+│   └── configs/
+│
+├── src/
+│   ├── detection/
+│   │   ├── detector.py
+│   │   └── model_loader.py
+│   │
+│   ├── logic/
+│   │   └── ppe_checker.py
+│   │
+│   ├── visualization/
+│   │   └── draw.py
+│   │
+│   └── app.py              # основной файл
+│
+├── notebooks/              # эксперименты
+│
+├── tests/
+│
+├── requirements.txt
+└── README.md
