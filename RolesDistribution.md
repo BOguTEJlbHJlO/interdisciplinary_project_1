@@ -5,11 +5,11 @@
 1. **PM/ML (Криворучко)**
 2. **ML (люди) ()**
 3. **ML (СИЗ) ()**
-4. **Data Engineer (Романова)**
+4. **Data Engineer (Горлов)**
 5. **Annotator ()**
-6. **Backend ()**
+6. **Backend (Бондарь)**
 7. **Frontend + презентация (Белоус)**
-8. **QA / Support ()**
+8. **QA / Support (Романова)**
 
 ---
 
