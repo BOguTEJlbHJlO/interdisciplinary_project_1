@@ -10,7 +10,7 @@ from torchvision import datasets, transforms, models
 from pathlib import Path
 
 # ---------- Конфиг ----------
-DATA_DIR = "dataset"
+DATA_DIR = r'C:\Users\MainAccount\Documents\Междисциплинарный проект\interdisciplinary_project_1\promo_project\data'
 NUM_CLASSES = 8
 BATCH_SIZE = 32
 EPOCHS = 20
@@ -43,8 +43,8 @@ val_tf = transforms.Compose([
 train_ds = datasets.ImageFolder(f"{DATA_DIR}/train", transform=train_tf)
 val_ds = datasets.ImageFolder(f"{DATA_DIR}/val", transform=val_tf)
 
-train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True, num_workers=2)
-val_loader = DataLoader(val_ds, batch_size=BATCH_SIZE, shuffle=False, num_workers=2)
+train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True, num_workers=0)
+val_loader = DataLoader(val_ds, batch_size=BATCH_SIZE, shuffle=False, num_workers=0)
 
 print(f"Классы: {train_ds.classes}")
 print(f"Train: {len(train_ds)} | Val: {len(val_ds)}")

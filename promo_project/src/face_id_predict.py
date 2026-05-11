@@ -1,6 +1,3 @@
-"""
-Инференс: определяем, кто на фото.
-"""
 import sys
 import torch
 import torch.nn as nn
