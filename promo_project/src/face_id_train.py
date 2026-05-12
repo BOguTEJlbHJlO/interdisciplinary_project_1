@@ -60,11 +60,10 @@ def build_model(num_classes: int) -> nn.Module:
         param.requires_grad = False
     for param in model.layer4.parameters():
         param.requires_grad = True
-    # Заменяем head под 8 классов
-    in_features = model.fc.in_features
+
     model.fc = nn.Sequential(
         nn.Dropout(0.3),
-        nn.Linear(in_features, num_classes),
+        nn.Linear(model.fc.in_features, num_classes),
     )
     return model
 

@@ -42,3 +42,4 @@ if __name__ == "__main__":
     path = sys.argv[1] if len(sys.argv) > 1 else "test.jpg"
     name, conf = predict(path)
     print(f"Предсказание: {name} (уверенность: {conf:.2%})")
+# python src\face_id_predict.py "C:\Users\MainAccount\Documents\Междисциплинарный проект\interdisciplinary_project_1\promo_project\data\val\person_5\135231.jpg"
